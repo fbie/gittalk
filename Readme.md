@@ -44,7 +44,7 @@ no changes added to commit (use "git add" and/or "git commit -a")
 ```
 
 Still no difference to origin, but Git realizes that some file has
-been edited. It also knows, what has been edited:
+been edited. It also knows what has changed:
 
 ```
 $ git diff
@@ -67,7 +67,16 @@ index 67eb13e..4beb453 100644
 
 ```git commit```
 
-```git push```
+```
+$ git push origin HEAD
+Counting objects: 3, done.
+Delta compression using up to 8 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 1.17 KiB | 0 bytes/s, done.
+Total 3 (delta 1), reused 0 (delta 0)
+To git@github.com:fbie/gittalk.git
+37ae305..95a2835  HEAD -> master
+```
 
 ```git pull```
 
