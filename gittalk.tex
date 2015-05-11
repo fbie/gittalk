@@ -1,0 +1,64 @@
+\documentclass{beamer}
+
+\title{Git is awesome!}
+\author{Florian Biermann\\\texttt{fbie@itu.dk}}
+\institute{Pit Lab\\IT University of Copenhagen}
+
+\begin{document}
+\frame{\titlepage}
+
+\begin{frame}{Why would you even use Git?}
+
+\begin{itemize}
+\item It's so complicated.
+\item Just push, or commit, or whatever.
+\item Hah, now it broke again, see?
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}{What's the idea behind Git?}
+
+\begin{itemize}
+\item A distributed versioning system for text and binary files.
+\item There is no single, monolithic repository: everyone has their own copy of it!
+\item Fine-grained control of what goes into the index and when.
+\item Very well suited for continuous integration with build servers.
+\item Used for documentation of large projects, subject to research, or just to mange your thesis.
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}{A quick outline}
+
+\begin{itemize}
+\item Getting an overview
+  \begin{itemize}
+  \item \texttt{git clone} and \texttt{git status}
+  \item \texttt{git diff} and \texttt{git log}
+  \end{itemize}
+\item Editing the index
+  \begin{itemize}
+  \item \texttt{git commit} and \texttt{git push}
+  \item \texttt{git pull} and \texttt{git fetch}
+  \end{itemize}
+\item Reparing things
+  \begin{itemize}
+  \item \texttt{git checkout}
+  \item \texttt{git revert} and \texttt{git reset}
+  \end{itemize}
+\item Branches and fancy stuff
+  \begin{itemize}
+  \item \texttt{git branch}
+  \item \texttt{git merge} and \texttt{git rebase}
+  \end{itemize}
+\item Maybe some extras, if time permits
+  \begin{itemize}
+  \item \texttt{git bisect}
+  \item The \texttt{.gitignore} file
+  \end{itemize}
+\end{itemize}
+
+\end{frame}
+
+\end{document}
