@@ -9,55 +9,99 @@
 
 \begin{frame}{Why would you even use Git?}
 
-\begin{itemize}
-\item It's so complicated.
-\item Just push, or commit, or whatever.
-\item Hah, now it broke again, see?
-\end{itemize}
+  \begin{itemize}
+  \item It's so complicated.
+  \item Just push, or commit, or whatever.
+  \item Hah, now it broke again, see?
+  \end{itemize}
 
 \end{frame}
 
 \begin{frame}{What's the idea behind Git?}
 
-\begin{itemize}
-\item A distributed versioning system for text and binary files.
-\item There is no single, monolithic repository: everyone has their own copy of it!
-\item Fine-grained control of what goes into the index and when.
-\item Very well suited for continuous integration with build servers.
-\item Used for documentation of large projects, subject to research, or just to mange your thesis.
-\end{itemize}
+  \begin{itemize}
+  \item A distributed versioning system for text and binary files.
+  \item There is no single, monolithic repository: everyone has their own copy of it!
+  \item Fine-grained control of what goes into the index and when.
+  \item Very well suited for continuous integration with build servers.
+  \item Used for documentation of large projects, subject to research, or just to mange your thesis.
+  \end{itemize}
 
 \end{frame}
 
 \begin{frame}{A quick outline}
 
-\begin{itemize}
-\item Getting an overview
   \begin{itemize}
-  \item \texttt{git clone} and \texttt{git status}
-  \item \texttt{git diff} and \texttt{git log}
+  \item Getting an overview
+    \begin{itemize}
+    \item \texttt{git clone} and \texttt{git status}
+    \item \texttt{git diff} and \texttt{git log}
+    \end{itemize}
+  \item Editing the index
+    \begin{itemize}
+    \item \texttt{git commit} and \texttt{git push}
+    \item \texttt{git pull} and \texttt{git fetch}
+    \end{itemize}
+  \item Reparing things
+    \begin{itemize}
+    \item \texttt{git checkout}
+    \item \texttt{git revert} and \texttt{git reset}
+    \end{itemize}
+  \item Branches and fancy stuff
+    \begin{itemize}
+    \item \texttt{git branch}
+    \item \texttt{git merge} and \texttt{git rebase}
+    \end{itemize}
+  \item Maybe some extras, if time permits
+    \begin{itemize}
+    \item \texttt{git bisect}
+    \item The \texttt{.gitignore} file
+    \end{itemize}
   \end{itemize}
-\item Editing the index
+
+\end{frame}
+
+\begin{frame}{Some Do's and Dont's}
+
   \begin{itemize}
-  \item \texttt{git commit} and \texttt{git push}
-  \item \texttt{git pull} and \texttt{git fetch}
+  \item By convention, use imperative form for commit messages.
+    \begin{itemize}
+    \item \textbf{Wrong}
+      \begin{itemize}
+      \item ``Added a new function foo()''
+      \item ``Rearranged methods section''
+      \end{itemize}
+    \item \textbf{Right}
+      \begin{itemize}
+      \item ``Add a new function foo()''
+      \item ``Rearrange methods section''
+      \end{itemize}
+    \end{itemize}
+  \item If your commit message is really long, use two newlines to
+    split it up into overview and detailed description.
+  \item Always perform functional and layout changes in separate
+    commits.
+  \item Do not use \texttt{git push -f} unless you \textbf{really}
+    know what you're doing.
   \end{itemize}
-\item Reparing things
+
+\end{frame}
+
+\begin{frame}{Some resources on the net}
+
   \begin{itemize}
-  \item \texttt{git checkout}
-  \item \texttt{git revert} and \texttt{git reset}
+  \item \url{http://git-scm.com/} \\Official website, lots of
+    documentation etc.
+  \item \url{http://jwiegley.github.io/git-from-the-bottom-up/} \\A
+    really detailed, from the bottom up, approach to Git.
+  \item \url{http://training.github.com/kit/downloads/github-git-cheat-sheet.pdf}
+    \\What everyone really wants: a Git cheat sheet.
   \end{itemize}
-\item Branches and fancy stuff
-  \begin{itemize}
-  \item \texttt{git branch}
-  \item \texttt{git merge} and \texttt{git rebase}
-  \end{itemize}
-\item Maybe some extras, if time permits
-  \begin{itemize}
-  \item \texttt{git bisect}
-  \item The \texttt{.gitignore} file
-  \end{itemize}
-\end{itemize}
+\end{frame}
+
+\begin{frame}{Thanks for listening!}
+
+  \center{Any questions?}
 
 \end{frame}
 
